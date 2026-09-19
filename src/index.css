@@ -276,10 +276,11 @@ a {
     position: relative;
     min-height: 800px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 150px 0 55px;
     overflow: hidden;
-    border-bottom: 1px solid rgba(148, 163, 184, .08)
+    border-bottom: 1px solid rgba(148, 163, 184, .08);
 }
 
 .hero-grid-lines {
@@ -1492,49 +1493,77 @@ a {
 
     .hero-section {
         min-height: auto;
-        padding: 100px 0 40px;
+        padding: 105px 0 40px;
+    }
+
+    .hero-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 36px;
+    }
+
+    .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
     }
 
     .eyebrow {
-        padding: 7px 12px;
+        align-self: center;
+        margin: 0 auto;
+        padding: 7px 14px;
         font-size: 9.5px;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.09em;
         white-space: nowrap;
         max-width: 100%;
         gap: 7px;
     }
 
     .hero-kicker {
-        margin: 16px 0 6px;
-        font-size: 12px;
+        text-align: center;
+        margin: 16px auto 6px;
+        font-size: 12.5px;
         color: #94a3b8;
     }
 
     .hero-copy h1 {
-        font-size: clamp(36px, 10.5vw, 58px);
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(38px, 10.5vw, 62px);
         line-height: 1;
-        margin: 6px 0 14px;
+        margin: 6px auto 14px;
         gap: 0 8px;
     }
 
     .hero-tagline {
-        font-size: clamp(16px, 3.8vw, 20px);
+        text-align: center;
+        font-size: clamp(16px, 4vw, 20px);
         line-height: 1.35;
-        margin: 0 0 10px;
+        margin: 0 auto 10px;
+        max-width: 520px;
     }
 
     .hero-description {
+        text-align: center;
         font-size: 13.5px;
         line-height: 1.65;
-        margin: 0 0 18px;
+        margin: 0 auto 20px;
+        max-width: 500px;
     }
 
     .hero-actions {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 10px;
         width: 100%;
-        margin-top: 18px;
+        max-width: 380px;
+        margin: 0 auto;
     }
 
     .hero-actions .btn,
@@ -1553,13 +1582,16 @@ a {
         grid-template-columns: repeat(2, 1fr);
         gap: 9px;
         font-size: 11px;
-        margin-top: 20px;
+        margin: 22px auto 0;
         width: 100%;
+        max-width: 440px;
     }
 
     .hero-points span {
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 7px;
         padding: 9px 10px;
         background: rgba(255, 255, 255, 0.03);
@@ -1572,6 +1604,8 @@ a {
     .hero-panel {
         border-radius: 22px;
         width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
     }
 
     .hero-panel-top {
@@ -1603,6 +1637,10 @@ a {
 
     .section-heading h2 {
         font-size: clamp(28px, 6vw, 44px);
+    }
+
+    .section-heading h2 br {
+        display: none;
     }
 
     /* Timeline Section */
