@@ -23,17 +23,17 @@ const highlights = [
 ];
 
 const staffCoordinators = [
-  { name: "Dr. Arulmozhi. P", role: "AP / IT", phone: "8190809453", displayPhone: "+91 81908 09453" },
-  { name: "Ms. Lalithavani. K", role: "AP / IT", phone: "7502682662", displayPhone: "+91 75026 82662" },
-  { name: "Mrs. Jayapratha. S", role: "AP / CSE", phone: "9943200919", displayPhone: "+91 99432 00919" },
-  { name: "Mrs. Deepika. B", role: "AP / CSE", phone: "9600508705", displayPhone: "+91 96005 08705" },
+  { name: "Dr. P. Arul Mozhi", role: "AP / IT", phone: "8190809453", displayPhone: "+91 81908 09453" },
+  { name: "Ms. K. Lalithavani", role: "AP / IT", phone: "7502682662", displayPhone: "+91 75026 82662" },
+  { name: "Mrs. S. Jayapratha", role: "AP / CSE", phone: "9943200919", displayPhone: "+91 99432 00919" },
+  { name: "Mrs. B. Deepika", role: "AP / CSE", phone: "9600508705", displayPhone: "+91 96005 08705" },
 ];
 
 const studentCoordinators = [
-  { name: "Ragul. S", role: "IT", phone: "7904979933", displayPhone: "+91 79049 79933" },
-  { name: "Karthikeyan. M", role: "IT", phone: "9344142109", displayPhone: "+91 93441 42109" },
-  { name: "Devanand. R", role: "CSE", phone: "6381136839", displayPhone: "+91 63811 36839" },
-  { name: "Subash. R", role: "CSE", phone: "9884147269", displayPhone: "+91 98841 47269" },
+  { name: "S. Ragul", role: "IT", phone: "7904979933", displayPhone: "+91 79049 79933" },
+  { name: "M. Karthikeyan", role: "IT", phone: "9344142109", displayPhone: "+91 93441 42109" },
+  { name: "R. Devanand", role: "CSE", phone: "6381136839", displayPhone: "+91 63811 36839" },
+  { name: "R. Subash", role: "CSE", phone: "9884147269", displayPhone: "+91 98841 47269" },
 ];
 
 const convenors = [
@@ -41,7 +41,7 @@ const convenors = [
   { name: "Dr. D. Shanmugasundaram", designation: "Principal", category: "President" },
   { name: "Dr. K. Anbarasan", designation: "Vice Principal", category: "Vice President" },
   { name: "Mr. S. Saravanan", designation: "HoD / IT", category: "Convenor" },
-  { name: "Mrs. Geetha. T", designation: "HoD / CSE", category: "Convenor" },
+  { name: "Mrs. T. Geetha", designation: "HoD / CSE", category: "Convenor" },
 ];
 
 export default function Home() {
