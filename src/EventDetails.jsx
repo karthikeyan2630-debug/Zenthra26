@@ -5,18 +5,6 @@ import Icon from "./components/Icon";
 const GOOGLE_FORM_LINK = "https://forms.gle/p9mTx7d22hEvAhSp8";
 const LOGO = "/WhatsApp_Image_2025-09-12_at_18.22.28_4ebc8d65-removebg-preview.png";
 
-/* const techEvents = [
-  { number: "01", icon: "fileText", category: "PRESENTATION • INNOVATION • TECHNOLOGY", title: "Paper Presentation", description: "A platform for participants to showcase innovative ideas, research and technical knowledge. Teams will present technology-related concepts and solutions within a limited time, demonstrating originality, technical understanding and presentation skills.", rules: ["Each team must have a minimum of 2 and a maximum of 4 members.", "The presentation topic must be related to technology.", "The content and ideas presented must be original.", "Participants must submit their PPT before the given deadline.", "The presentation must contain exactly 8 slides.", "Each team will be given 6 minutes for the presentation.", "Participants must demonstrate technical understanding and presentation skills.", "Judge's decision is final."] },
-  { number: "02", icon: "bug", category: "DEBUGGING • PROGRAMMING • SPEED", title: "CodeBuzz", description: "A fast-paced debugging challenge where participants identify and fix errors in Python, Java and C programs. Analyze the code, correct the bugs and produce the expected output before time runs out.", rules: ["Each team must have a minimum of 1 and a maximum of 2 members.", "The total duration of the event is 10 minutes.", "The challenge includes 1 Python, 1 Java and 1 C program.", "Participants must identify and fix errors in the given programs.", "The corrected programs must produce the expected output.", "Marks will be awarded based on correctly debugged programs.", "Participants must use the system provided by the organizers.", "Judge's decision is final."] },
-  { number: "03", icon: "zap", category: "VIBE CODING • AI • PROBLEM SOLVING", title: "Vibe Craft", description: "An individual coding challenge where participants are given a real-world problem scenario and must build a functional solution using vibe coding. AI tools are allowed to assist development while participants demonstrate creativity and problem-solving skills.", rules: ["Vibe Craft is an individual participation event.", "Participants will be given a real-world problem scenario.", "Participants are allowed to use AI tools for vibe coding.", "The final solution must be functional.", "The solution must be completed within the given time.", "Participants must bring their own laptop.", "Creativity, functionality and problem-solving skills will be evaluated.", "Judge's decision is final."] },
-];
-
-const funEvents = [
-  { number: "01", icon: "search", category: "DETECTIVE • MYSTERY • BUZZER", title: "Sherlock Holmes", description: "A thrilling detective challenge where teams investigate mysterious cases, decode clues, uncover hidden twists and identify the culprit before time runs out. Teams must connect the evidence and present the culprit, motive and supporting evidence.", rules: ["Each team must have 2–4 members.", "Teams must analyze the case and clues carefully.", "Participants must connect the evidence to identify the culprit.", "Press the buzzer when your team knows the answer.", "Teams must answer only when they are called.", "The case must be solved within the given time.", "The final answer must include the Culprit, Motive and Evidence.", "No phones, internet or outside help is allowed."] },
-  { number: "02", icon: "music", category: "MUSIC • GUESSING • BUZZER", title: "Tune Detective", description: "A fun musical guessing game where Tamil song meanings are translated into English. Participants must identify the original Tamil song and hit the buzzer as soon as they know the answer. Test your music knowledge, memory and quick thinking.", rules: ["The English translation of a Tamil song will be displayed or read aloud.", "Participants must identify the original Tamil song.", "No singing, online searching or external help is allowed.", "Press the buzzer when you know the answer.", "The fastest correct answer earns the points.", "Participants must answer when their team is called.", "The participant or team with the highest score wins."] },
-  { number: "03", icon: "globe", category: "WORD • CLUES • SPEED", title: "Clues Storm", description: "A fun and fast-paced word-guessing game where one player gives clues to help their teammate guess the given word without using the forbidden words. Communicate quickly and strategically to score as many points as possible.", rules: ["Each team must have 2 members.", "Each team will get 60 seconds.", "One player gives clues while the other player guesses the word.", "The forbidden words must not be used.", "Each correct answer earns 1 point.", "If a forbidden word is used, that word will be skipped.", "Teams must complete as many correct guesses as possible within the time limit.", "The team with the highest score wins.", "Judge's decision is final."] },
-  { number: "04", icon: "brain", category: "VISUAL • MEMORY • BUZZER", title: "Mind Snap", description: "A memory-based visual challenge where teams get 60 seconds to observe a projected picture. The picture is then hidden and questions based on the picture are asked. Teams must hit the buzzer and answer correctly.", rules: ["Each team must have 2–4 members. No solo participation.", "The picture will be displayed for 60 seconds.", "No photos or recordings are allowed.", "The picture will be hidden before questions are asked.", "Press the buzzer before answering.", "Wrong or no answer → the chance passes to the next team.", "Correct answers earn points.", "Judge's decision is final."] },
-]; */
 
 const techEvents = [
 
@@ -179,7 +167,7 @@ export default function EventDetails() {
   const openRegistration = () => window.open(GOOGLE_FORM_LINK, "_blank", "noopener,noreferrer");
   return <div className="site-shell">
     <header className="site-header"><nav className="nav-shell" aria-label="Main navigation"><Link to="/" className="brand"><img src={LOGO} alt="Dhanalakshmi Srinivasan Engineering College logo" className="brand-logo" /><div className="brand-copy"><strong>Dhanalakshmi Srinivasan Engineering College (Autonomous)</strong><span>Department of Information Technology</span></div></Link><div className="desktop-nav"><Link className="nav-link" to="/">Home</Link><a className="nav-link" href="#technical">Technical</a><a className="nav-link" href="#non-technical">Non-Technical</a><button className="btn btn-primary nav-cta" onClick={openRegistration}>Register Now <Icon name="arrowUpRight" size={16} /></button></div><button className="menu-toggle" onClick={() => setMenuOpen(v => !v)} aria-label="Toggle navigation" aria-expanded={menuOpen}><Icon name={menuOpen ? "x" : "menu"} size={22} /></button></nav>{menuOpen && <div className="mobile-nav"><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link><a href="#technical" onClick={() => setMenuOpen(false)}>Technical</a><a href="#non-technical" onClick={() => setMenuOpen(false)}>Non-Technical</a><button className="btn btn-primary" onClick={openRegistration}>Register Now <Icon name="arrowUpRight" size={16} /></button></div>}</header>
-    <main className="events-page"><section className="events-hero"><div className="container"><span className="section-label">EVENT ARENA</span><h1>Explore our <span>symposium events.</span></h1><p>Choose your challenge, showcase your skills and experience the excitement of ZENTHRA '26.</p><div className="event-stats"><div><strong>04</strong><span>Technical Events</span></div><div><strong>04</strong><span>Non-Technical Events</span></div><div><strong>₹250</strong><span>Registration Fee</span></div></div></div></section>
+    <main className="events-page"><section className="events-hero"><div className="container"><span className="section-label">EVENT ARENA</span><h1>Explore our <span>symposium events.</span></h1><p>Choose your challenge, showcase your skills and experience the excitement of ZENTHRA '26.</p><div className="event-stats"><div><strong>04</strong><span>Technical Events</span></div><div><strong>04</strong><span>Non-Technical Events</span></div><div><strong>₹300</strong><span>Registration Fee</span></div></div></div></section>
       <section id="technical" className="event-section"><div className="container"><SectionHeader label="TECHNICAL EVENTS" title="Tech Arena" description="Challenge your technical knowledge, creativity and programming skills." /><EventGrid events={techEvents} /></div></section>
       <section id="non-technical" className="event-section alt"><div className="container"><SectionHeader label="NON-TECHNICAL EVENTS" title="Fun Arena" description="Think fast, work together and enjoy exciting challenges." /><EventGrid events={funEvents} /></div></section>
       <section className="container event-final-cta"><div><span className="section-label">ZENTHRA '26</span><h2>Found your event?</h2><p>Complete your registration using the official form.</p></div><button className="btn btn-primary btn-large" onClick={openRegistration}>Register Now <Icon name="arrowRight" size={18} /></button></section>
@@ -191,57 +179,6 @@ export default function EventDetails() {
 function SectionHeader({ label, title, description }) { return <div className="event-section-header"><div><span className="section-label">{label}</span><h2>{title}</h2></div><p>{description}</p></div>; }
 
 function EventGrid({ events }) {
-  const [openRules, setOpenRules] = useState({});
-
-  const toggleRules = (title) => {
-    setOpenRules(prev => ({
-      ...prev,
-      [title]: !prev[title]
-    }));
-  };
-
-  return (
-    <div className="event-grid">
-      {events.map(event => {
-        const open = !!openRules[event.title];
-        return (
-          <article className="event-card" key={event.title}>
-            <div className="event-card-top">
-              <div className="event-icon"><Icon name={event.icon} size={24} /></div>
-              <div>
-                <span className="event-number">EVENT {event.number}</span>
-                <span className="event-category">{event.category}</span>
-              </div>
-              <span className="event-bg-number">{event.number}</span>
-            </div>
-            <h3>{event.title}</h3>
-            <p>{event.description}</p>
-            <div className="event-divider" />
-            <button
-              className="rules-toggle"
-              onClick={() => toggleRules(event.title)}
-              aria-expanded={open}
-            >
-              <span><Icon name="shield" size={17} /> Rules & Regulations</span>
-              <span className={open ? "rotated" : ""}><Icon name="chevronDown" size={18} /></span>
-            </button>
-            <div className={`rules-panel ${open ? "open" : ""}`}>
-              <div>
-                {event.rules.map((rule, index) => (
-                  <p key={index}>
-                    <b>{String(index + 1).padStart(2, "0")}</b>
-                    <span>{rule}</span>
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="event-card-footer">
-              <span>ZENTHRA '26</span>
-              <span className="footer-arrow"><Icon name="arrowUpRight" size={14} /></span>
-            </div>
-          </article>
-        );
-      })}
-    </div>
-  );
+  const [openRules, setOpenRules] = useState(null);
+  return <div className="event-grid">{events.map(event => { const open = openRules === event.title; return <article className="event-card" key={event.title}><div className="event-card-top"><div className="event-icon"><Icon name={event.icon} size={24} /></div><div><span className="event-number">EVENT {event.number}</span><span className="event-category">{event.category}</span></div><span className="event-bg-number">{event.number}</span></div><h3>{event.title}</h3><p>{event.description}</p><div className="event-divider" /><button className="rules-toggle" onClick={() => setOpenRules(open ? null : event.title)} aria-expanded={open}><span><Icon name="shield" size={17} /> Rules & Regulations</span><span className={open ? "rotated" : ""}><Icon name="chevronDown" size={18} /></span></button><div className={`rules-panel ${open ? "open" : ""}`}><div>{event.rules.map((rule, index) => <p key={index}><b>{String(index + 1).padStart(2, "0")}</b><span>{rule}</span></p>)}</div></div><div className="event-card-footer"><span>ZENTHRA '26</span><span className="footer-arrow"><Icon name="arrowUpRight" size={14} /></span></div></article>; })}</div>;
 }

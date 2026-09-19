@@ -8,10 +8,11 @@ const LOGO = "/WhatsApp_Image_2025-09-12_at_18.22.28_4ebc8d65-removebg-preview.p
 
 const eventDetails = [
   { icon: "calendar", title: "Date", value: "14 October 2026" },
-   { icon: "calendar", title: "Full Paper Submission Deadline", value: "10 October 2026" },
+  { icon: "calendar", title: "Full Paper Submission Deadline", value: "10 October 2026" },
   { icon: "clock", title: "Time", value: "09:00 AM - 04:00 PM" },
   { icon: "mapPin", title: "Venue", value: "College Agricultural Auditorium" },
-  { icon: "wallet", title: "Registration Fee", value: "₹ 250" },
+  { icon: "wallet", title: "Registration Fee", value: "₹ 300" },
+  { icon: "check", title: "Spot Registration", value: "Available at Venue" },
 ];
 
 const highlights = [
@@ -82,6 +83,7 @@ export default function Home() {
                 <span><Icon name="check" size={16} /> Open for Students</span>
                 <span><Icon name="check" size={16} /> Certificates</span>
                 <span><Icon name="check" size={16} /> Exciting Prizes</span>
+                <span><Icon name="check" size={16} /> Spot Registration Available</span>
               </div>
             </div>
 
@@ -140,7 +142,7 @@ export default function Home() {
               <Link className="btn btn-secondary" to="/event">Explore Events <Icon name="arrowUpRight" size={17} /></Link>
             </div>
             <div className="registration-cta">
-              <div className="cta-glow" /><div className="cta-content"><span className="section-label">DON'T MISS OUT</span><h2>Ready to be part of <span>ZENTHRA '26?</span></h2><p>Registration is quick and easy. Click below to fill out the official registration form.</p><button className="btn btn-primary btn-large" onClick={openRegistration}>Register Now <Icon name="arrowRight" size={18} /></button></div>
+              <div className="cta-glow" /><div className="cta-content"><span className="section-label">DON'T MISS OUT</span><h2>Ready to be part of <span>ZENTHRA '26?</span></h2><p>Registration is quick and easy. Register online via the official form or directly at the venue — spot registration is available on event day.</p><button className="btn btn-primary btn-large" onClick={openRegistration}>Register Now <Icon name="arrowRight" size={18} /></button></div>
             </div>
           </div>
         </section>
