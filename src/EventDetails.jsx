@@ -172,7 +172,17 @@ export default function EventDetails() {
       <section id="non-technical" className="event-section alt"><div className="container"><SectionHeader label="NON-TECHNICAL EVENTS" title="Fun Arena" description="Think fast, work together and enjoy exciting challenges." /><EventGrid events={funEvents} /></div></section>
       <section className="container event-final-cta"><div><span className="section-label">ZENTHRA '26</span><h2>Found your event?</h2><p>Complete your registration using the official form.</p></div><button className="btn btn-primary btn-large" onClick={openRegistration}>Register Now <Icon name="arrowRight" size={18} /></button></section>
     </main>
-    <footer className="site-footer"><div className="container footer-bottom single"><span>© 2026 ZENTHRA '26 • Department of Computer Science & Engineering and Information Technology</span><Link to="/">Back to Home <Icon name="arrowUpRight" size={14} /></Link></div></footer>
+    <footer className="site-footer">
+      <div className="container">
+        <div className="footer-trust-notice">
+          <Icon name="shield" size={18} />
+          <p>
+            <strong>Official Communication Notice:</strong> Send symposium queries to <a href="mailto:zenthra26@gmail.com">zenthra26@gmail.com</a>. Please only trust official information received directly from this mail address.
+          </p>
+        </div>
+      </div>
+      <div className="container footer-bottom single"><span>© 2026 ZENTHRA '26 • Department of Computer Science & Engineering and Information Technology</span><Link to="/">Back to Home <Icon name="arrowUpRight" size={14} /></Link></div>
+    </footer>
   </div>;
 }
 
