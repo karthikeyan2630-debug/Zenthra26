@@ -124,7 +124,7 @@ export default function WelcomeLoader({ onFinish }) {
           <h1 className="loader-title">
             <span>ZENTHRA</span> <em>'26</em>
           </h1>
-          <p className="loader-subtitle">Department of Information Technology</p>
+          <p className="loader-subtitle">Department of Computer Science & Engineering and Information Technology</p>
         </div>
 
         {/* Futuristic Digital Progress Module */}

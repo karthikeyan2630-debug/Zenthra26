@@ -10,7 +10,7 @@ const eventDetails = [
   { icon: "calendar", title: "Date", value: "14 October 2026" },
   { icon: "calendar", title: "Full Paper Submission Deadline", value: "10 October 2026" },
   { icon: "clock", title: "Time", value: "09:00 AM - 04:00 PM" },
-  { icon: "mapPin", title: "Venue", value: "College Agricultural Auditorium" },
+  { icon: "mapPin", title: "Venue", value: "College Mini Auditorium" },
   { icon: "wallet", title: "Registration Fee", value: "₹ 300" },
   { icon: "check", title: "Spot Registration", value: "Available at Venue" },
 ];
@@ -35,7 +35,7 @@ export default function Home() {
             <img src={LOGO} alt="Dhanalakshmi Srinivasan Engineering College logo" className="brand-logo" />
             <div className="brand-copy">
               <strong>Dhanalakshmi Srinivasan Engineering College (Autonomous)</strong>
-              <span>Department of Information Technology</span>
+              <span>Department of Computer Science & Engineering and Information Technology</span>
             </div>
           </a>
 
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="container hero-layout">
             <div className="hero-copy animate-in">
               <div className="eyebrow"><span className="status-dot" /> NATIONAL LEVEL SYMPOSIUM • 2026</div>
-              <p className="hero-kicker">Department of Information Technology presents</p>
+              <p className="hero-kicker">Department of Computer Science & Engineering and Information Technology presents</p>
               <h1><span>ZENTHRA</span> <em>'26</em></h1>
               <p className="hero-tagline">Where technology, creativity and competition come together.</p>
               <p className="hero-description">ZENTHRA '26 is a vibrant technical symposium bringing together passionate students, innovative minds and technology enthusiasts for a day of challenges, ideas and collaboration.</p>
@@ -103,7 +103,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <button className="panel-cta" onClick={openRegistration}>Secure Your Spot <Icon name="arrowRight" size={17} /></button>
             </div>
           </div>
           <div className="hero-bottom container"><span>14 OCTOBER 2026</span><i /><span>DHANALAKSHMI SRINIVASAN ENGINEERING COLLEGE (AUTONOMOUS)</span><i /><span>PERAMBALUR</span></div>
@@ -150,7 +149,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-grid">
-          <div><div className="footer-brand"><span>Z</span><div><strong>ZENTHRA '26</strong><small>Department of Information Technology</small></div></div><p>Dhanalakshmi Srinivasan Engineering College (Autonomous)</p></div>
+          <div><div className="footer-brand"><span>Z</span><div><strong>ZENTHRA '26</strong><small>Department of Computer Science & Engineering and Information Technology</small></div></div><p>Dhanalakshmi Srinivasan Engineering College (Autonomous)</p></div>
           <div className="footer-links"><strong>Quick Links</strong><a href="#about">About</a><a href="#details">Event Details</a><Link to="/event">Explore Events</Link></div>
           <div className="footer-links"><strong>Connect</strong><a href="https://maps.app.goo.gl/3AwxxnVfk67nsmg1A" target="_blank" rel="noreferrer"><Icon name="mapPin" size={15} /> Event Location <Icon name="external" size={13} /></a><button onClick={openRegistration}><Icon name="external" size={15} /> Registration</button></div>
         </div>
